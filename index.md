@@ -18,33 +18,35 @@ Pr. AMMOUR Alae
 
 - [L'ajout d'un bruit](#lajout-dun-bruit)
 
+   - [Definition](#definition)
+   
+   - [Remarque](#remarque)
+
 - [Analyse fréquentielle du chant du rorqual bleu](#analyse-fréquentielle-du-chant-du-rorqual-bleu)
 
 
 ## Représentation temporelle et fréquentielle 
 
-     le signal x(t). Pas de temps : Te = 1/50s, Intervalle : 0, 10-Te
+  le signal  `x(t)`  ; Pas de temps `Te = 1/50s` ; Intervalle  `0, 10-Te`
 
  ```Matlab
      clear all
      close all
      clc
 
-     %Partie 1-----------------------------------------------------------------------------------------------------------------------------------
+     % Partie 1
 
      Te=1/50; 
      fe=50;      
      t=0:Te:10-Te;
      N=length(t);
      figure(1);
-     %s un signal périodique x(t) constitué d’une somme de deux sinusoïdes de fréquences 15Hz et 20Hz
+     % C'est un signal périodique x(t) constitué d’une somme de deux sinusoïdes de fréquences 15Hz et 20Hz
      x=sin(2*pi*15*t)+sin(2*pi*20*t);
      subplot(3,2,1);
      %sound(x);
      plot(t,x);
-     title('signal periodique');
-     
-     
+     title('signal periodique');   
 ```
 
 ## la TFD du signal x(t) en utilisant la commande fft
@@ -57,16 +59,15 @@ Pr. AMMOUR Alae
        subplot(3,2,2);
        plot(f,F);
        title('TFD');
-       
  ```
 
 
-▪ On remarquera que la TF est une fonction complexe et que la fonction ainsi
-obtenue décrit la TF de x(t) entre –1/(2Te) et 1/(2Te) par pas de 1/(nTe) où n
-est le nombre de points constituant le signal x(t).
+- On Peut remarquer que la TF est une fonction complexe et que notre fonction décrit
+ la TF de x(t) entre –1/(2Te) et 1/(2Te) avec un pas de 1/(nTe) où n
+ est le nombre de points constituant le signal x(t).
 
-▪ La commande fft codant les fréquences positives sur les n/2 premières valeurs
-du signal et les valeurs négatives entre n/2+1 et n, la commande fftshift permet
+- `fft` est une commande qui permet de coder les fréquences positives sur les n/2 premières valeurs
+du signal et les valeurs négatives entre (n/2)+1 et n, la commande `fftshift` permet
 de les inverser.
 
 ```Matlab
@@ -79,18 +80,25 @@ title('TFD centré à zero');
 
 ```
 
-On remarquera que la fonction fftshift, qui effectue un décalage circulaire centré 
-sur zéro du spectre en amplitude obtenu par la commande fft.
+On observe que la fonction `fftshift`, permet d'effectue un décalage circulaire centré 
+sur zéro du spectre en amplitude obtenu par la commande `fft` .
 
 
 ## L'ajout d'un bruit
 
+## Definition
 
-*Un bruit correspond à tout phénomène perturbateur gênant la transmission ou
-l'interprétation d'un signal. Dans les applications scientifiques, les signaux sont
-souvent corrompus par du bruit aléatoire, modifiant ainsi leurs composantes
-fréquentielles. La TFD peut traiter le bruit aléatoire et révéler les fréquences qui y
-correspond.*
+Un bruit correspond à tout phénomène perturbateur gênant
+la transmission ou l'interprétation d'un signal.
+
+## Remarque
+
+Les notions de signal et bruit sont très relatives. Pour un technicien des
+télécommunications qui écoute un émetteur lointain relayé par un satellite, le
+signal provenant d’une source astrophysique (soleil, quasar*) placée
+malencontreusement dans la même direction est un bruit. Mais pour
+l’astronome qui s’intéresse à la source astrophysique, c’est le signal du satellite
+qui est un bruit.
 
 ```Matlab
 
