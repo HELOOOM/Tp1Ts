@@ -21,6 +21,8 @@ Pr. AMMOUR Alae
    - [Definition](#definition)
    
    - [Remarque](#remarque)
+   
+   - [Resultats](#resultats)
 
 - [Analyse fréquentielle du chant du rorqual bleu](#analyse-fréquentielle-du-chant-du-rorqual-bleu)
 
@@ -136,7 +138,9 @@ fréquences du signal en raison des pics de puissance. En plus, on voit que, ent
 et 15Hz, la densité spectrale de puissance est relativement constante. Ceci est dû au
 bruit blanc gaussien.
 
-Ci dessous on peut visualiser les resultats de tout se qu'on vient de trate cette figure.
+## Resultats
+
+Dans cette figure on peut visualiser les resultats de tout se qu'on vient de traite .
 
 ![image](https://user-images.githubusercontent.com/85129301/149663806-258628f8-666d-402b-8a1d-916800b3fbe0.png)
 
