@@ -88,8 +88,10 @@ sur zéro du spectre en amplitude obtenu par la commande `fft` .
 
 ## Definition
 
-Un bruit correspond à tout phénomène perturbateur gênant
-la transmission ou l'interprétation d'un signal.
+
+**Un bruit correspond à tout phénomène perturbateur gênant
+la transmission ou l'interprétation d'un signal.**
+
 
 ## Remarque
 
@@ -99,6 +101,7 @@ signal provenant d’une source astrophysique (soleil, quasar*) placée
 malencontreusement dans la même direction est un bruit. Mais pour
 l’astronome qui s’intéresse à la source astrophysique, c’est le signal du satellite
 qui est un bruit.
+
 
 ```Matlab
 
@@ -119,20 +122,21 @@ plot(fshift,fftshift(DS));
 
 ```
 
-un nouveau signal xnoise, un bruit blanc gaussien dans le
-signal d’origine x(t).la commande randn pour générer ce
-bruit. Il est à noter qu’un bruit blanc est une réalisation d'un processus aléatoire dans
-lequel la densité spectrale de puissance est la même pour toutes les fréquences de
-la bande passante. Ce bruit suit une loi normale de moyenne et variance données.
+- Un nouveau signal xnoise, un bruit blanc gaussien dans le
+signal d’origine x(t). `randn` est une commande qui permet de générer ce
+bruit. Un bruit blanc est une réalisation d'un processus aléatoire 
+dans lequel la densité spectrale de puissance est la même pour l'ensemble des fréquences.
+On parle fréquemment de bruit blanc gaussien,
+c'est un bruit blanc qui suit une loi normale de moyenne et variance données.
 
 
 
-. Malgré le bruit, ont peut constater qu’il est toujours possible de distinguer les
+- Malgré le bruit, ont peut constater qu’il est toujours possible de distinguer les
 fréquences du signal en raison des pics de puissance. En plus, on voit que, entre 0Hz
 et 15Hz, la densité spectrale de puissance est relativement constante. Ceci est dû au
 bruit blanc gaussien.
 
-on remarque toutes les courbes sur cette figure.
+Ci dessous on peut visualiser les resultats de tout se qu'on vient de trate cette figure.
 
 ![image](https://user-images.githubusercontent.com/85129301/149663806-258628f8-666d-402b-8a1d-916800b3fbe0.png)
 
