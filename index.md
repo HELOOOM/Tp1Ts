@@ -13,7 +13,7 @@ Pr. AMMOUR Alae
 # summarry
 
   ## [Représentation temporelle et fréquentielle](#représentation-temporelle-et-fréquentielle)
-  ## [la TFD du signal x(t) en utilisant la commande fft](#la-tfd-du-signal-x(t)-en-utilisant-la-commande-fft)
+  ## [la TFD du signal x(t) en utilisant la commande fft](#la-tfd-du-signal-xt-en-utilisant-la-commande-fft)
 
 
 
