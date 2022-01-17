@@ -5,11 +5,17 @@ Pr. AMMOUR Alae
 
 ## Objectifs
 
-      • Représentation de signaux et applications de la transformée de Fourier discrète
+   - Représentation de signaux et applications de la transformée de Fourier discrète
         (TFD) sous Matlab. 
 
-       • Evaluation de l’intérêt du passage du domaine temporel au domaine fréquentiel
+   - Evaluation de l’intérêt du passage du domaine temporel au domaine fréquentiel
           dans l’analyse et l’interprétation des signaux physiques réels.
+# summarry
+
+ - ## [Représentation temporelle et fréquentielle](représentation-temporelle-et-fréquentielle)
+ - ## [la TFD du signal x(t) en utilisant la commande fft](la-tfd-du-signal-x(t)-en-utilisant-la-commande-fft)
+
+
 
 ## Représentation temporelle et fréquentielle 
 
