@@ -16,6 +16,7 @@ Pr. AMMOUR Alae
  
 - [la TFD du signal x(t) en utilisant la commande fft](#la-tfd-du-signal-xt-en-utilisant-la-commande-fft)
 
+- [L'ajout d'un bruit](l'ajout-d'un-bruit)
 
 
 ## Représentation temporelle et fréquentielle 
