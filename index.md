@@ -144,7 +144,7 @@ bruit blanc gaussien.
 
 Dans cette figure on peut visualiser les resultats de tout se qu'on vient de traite .
 
-![image](https://user-images.githubusercontent.com/85129301/149663806-258628f8-666d-402b-8a1d-916800b3fbe0.png)
+![Image](resultat.png)
 
 
 
@@ -201,7 +201,7 @@ title('la densité spectrale de puissance du signal')
 * On peut Déterminer à partir du tracé, la fréquence fondamentale du gémissement de rorqual
 bleu.*
 
-![image](https://user-images.githubusercontent.com/85129301/149664604-28481b50-bfbc-49a2-8cbd-1ade3023551f.png)
+![image](resultat1.png)
 
 #Fin.
 
