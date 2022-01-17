@@ -108,20 +108,22 @@ qui est un bruit.
 ```Matlab
 
 % randn pour générer un xnoice (bruit)
-xnoise=x+2*randn(size(t));
+xnoise=x+1.5*randn(size(t));
 
 subplot(3,2,4);
 plot(t,xnoise);
+title('xnoise');
 
 % le spectre de puissance du signal bruité centré à la fréquence zéro
 Fnoise=abs(fft(xnoise));
 subplot(3,2,5);
 plot(fshift,fftshift(Fnoise.^2));
+title('TFD du bruit');
 
 DS=(Fnoise.^2)/N;
 subplot(3,2,6);
 plot(fshift,fftshift(DS));
-
+title('densite spectrale de puissance')
 ```
 
 - Un nouveau signal xnoise, un bruit blanc gaussien dans le
