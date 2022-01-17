@@ -12,9 +12,9 @@ Pr. AMMOUR Alae
           dans l’analyse et l’interprétation des signaux physiques réels.
 # summarry
 
-  ## [Représentation temporelle et fréquentielle](#représentation-temporelle-et-fréquentielle)
+  - ##  [Représentation temporelle et fréquentielle](#représentation-temporelle-et-fréquentielle)
  
-  ## [la TFD du signal x(t) en utilisant la commande fft](#la-tfd-du-signal-xt-en-utilisant-la-commande-fft)
+  - ##  [la TFD du signal x(t) en utilisant la commande fft](#la-tfd-du-signal-xt-en-utilisant-la-commande-fft)
 
 
 
